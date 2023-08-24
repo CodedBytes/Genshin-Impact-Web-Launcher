@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genshin Impact</title>
+    <link rel="shortcut icon" href="./imgs/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./slick/slick-theme.css"/>
+    <link rel="stylesheet" href="./slick/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="infos">
+        <img src="./imgs/logo.png" alt="" />
+
+        <!-- Slick slider here -->
+        <div class="slider">
+            <div><img src="./imgs/slide/slide1.png" alt="" /></div>
+            <div><img src="./imgs/slide/slide2.png" alt="" /></div>
+            <div><img src="./imgs/slide/slide3.png" alt="" /></div>
+        </div>
+
+        <!-- Noticias -->
+        <div class="notices">
+            <!-- Noticia 1  -->
+            <div class="content">
+                <a href="" class="desc" title="Este é um texto teste de uma noticias, seja de atualização, evento, etc...">Este é um texto teste de uma noticias, seja de atualização, evento, etc...</a>
+                <span class="date">08/23</span>
+            </div>
+
+            <div class="content">
+                <a href="" class="desc" title="[Tipo Evento] Evento de testes para checar responsividade">[Tipo Evento] Evento de testes para checar responsividade</a>
+                <span class="date">08/23</span>
+            </div>
+
+            <div class="content">
+                <a href="" class="desc" title="[Tipo Evento] Evento de testes para checar responsividade">[Tipo Evento] Evento de testes para checar responsividade</a>
+                <span class="date">08/23</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Versão -->
+    <section class="version">
+        <div class="desc">
+            <img src="./imgs/star.PNG" alt=""><span>Disponível agora, Versão 4.0!</span>
+        </div>
+
+        <h1><div class="higher">UMA CHUVA</div>INESPERADA</h1>
+        <div class="firstOutline"><button class="destaque">Destaques da Versão</button></div>
+        <div class="buttons">
+            <button class="game"><span>Iniciar Jogo</span></button>
+            <button class="option"><i class="fa-solid fa-bars"></i></button>
+        </div>
+    </section>
+
+    <!-- Icons bar -->
+    <section class="icons">
+        <a href="https://hoyo.link/74Q1BHAd" class="sideBtn"><i class="fa-brands fa-tiktok fa-2x"></i></a>
+        <a href="javascript:void(0);" onclick="Menu();" id="dropbtn" class="sideBtn"><i class="fa-solid fa-earth-americas fa-2x" id="dropbtn"></i></a>
+        <a href="https://www.youtube.com/c/GenshinImpact" class="sideBtn"><i class="fa-brands fa-youtube fa-2x"></i></a>
+        <a href="https://hoyo.link/1ev1BUAd" class="sideBtn"><i class="fa-brands fa-twitter fa-2x"></i></a>
+        <a href="https://hoyo.link/bc02BQAd" class="sideBtn"><i class="fa-brands fa-facebook-f fa-2x"></i></a>
+        <a href="https://genshin.hoyoverse.com/pt" class="sideBtn"><i class="fa-solid fa-house fa-2x"></i></a>
+        <a href="https://www.reddit.com/r/Genshin_Impact/" class="sideBtn"><i class="fa-brands fa-reddit-alien fa-2x"></i></a>
+    
+        <!-- World window -->
+        <div id="world-dropdown" class="dd-content arrow-right">
+            <div class="content">
+                <img src="./imgs/sidebar/qr-map.png" alt="" title="Use seu celular! ;)">
+                <span>Leia e Acesse</span>
+            </div>
+
+            <div class="test"><a href="https://hoyo.link/82OyCBAd">Mapa de teyvat!</a></div>
+        </div>
+    </section>
+    
+
+    <!-- Windows JS-->
+    <script type="text/javascript" src="./js/dropMenus.js"></script>
+
+    <!-- Slick -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="./slick/slick.min.js"></script>
+
+    <!-- Slick carrousel snippet -->
+    <script>
+        $(document).ready(function(){
+            $('.slider').slick({
+                dots: false,
+                infinite: true,
+                speed: 650,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                pauseOnHover:false,
+                responsive: [
+                    {
+                        breakpoint: 1100,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            infinite: true,
+                            autoplay: true,
+                            pauseOnHover:false,
+                        }
+                    }
+                ]
+            });
+        });
+        </script>
+</body>
+</html>

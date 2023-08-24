@@ -1,0 +1,379 @@
+:root{
+    --char-color: white;
+    --icons-color: white;
+    --buttons-color: rgb(255, 208, 0);
+    --buttons-hover-color: rgb(253, 229, 122);
+    --sub-buttons-color: white;
+    --sub-buttons-border: rgb(158, 124, 72);
+    --sub-buttons-char-color: rgb(129, 88, 27);
+    --version-color: rgb(129, 88, 27);
+    --version-char-color: rgb(245, 237, 225);
+    --info-background-color: rgba(0, 0, 0, 0.596);
+    --info-date-color: rgb(85, 85, 85);
+    --side-buttons-back-color: rgba(0, 0, 0, 0.35);
+    --side-buttons-selected-back-color: rgba(0, 0, 0, 0.75);
+    --side-buttons-selected-color: rgb(207, 175, 30);
+    --side-background-color: rgba(0, 0, 0, 0.3);
+    --box-border-color: #ddd;
+    --box-bg-color: #f1f1f1;
+    --box-normal-text-color: rgb(150, 150, 150);
+    --box-link-bg-color: rgb(109, 109, 109);
+    --box-link-char-color: rgb(219, 172, 102);
+    --box-link-charHover-color: rgb(214, 154, 65);
+}
+
+/* Custon Font */
+@font-face {
+    font-family: genshinFont;
+    src: url("../fonts/zh-cn.ttf");
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("../imgs/wallpaper.jpg");
+    background-size:100% 100vh;
+    background-repeat: no-repeat;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Modificando tamanho global do slider */
+.slick-slider{
+    width: 455px;
+}
+
+/* INFO SECTION */
+section.infos{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 40px;
+    width: 455px;
+}
+section.infos > img{
+    width: 250px;
+    margin-bottom: 20px;
+}
+section.infos > .slider{
+    margin-bottom: 20px;
+}
+
+section.infos > .notices{
+    padding: 20px 20px;
+    width: 100%;
+    background-color: var(--info-background-color);
+    color: var(--char-color);
+}
+
+section.infos > .notices > .content{
+    display: flex;
+    flex-direction: row;
+    font-size: 17px;
+    margin-top: 7px;
+    font-weight: 600;
+    justify-content: space-between;
+}
+
+section.infos > .notices > .content > .desc{
+    width: 80%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-decoration: none;
+    color: var(--char-color);
+}
+section.infos > .notices > .content > .date{
+    color: var(--info-date-color);
+}
+/* ------------------------------------------------------------------- */
+
+/* VERSÃO */
+section.version{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 20px;
+    right: 140px;
+    text-align: right;
+}
+section.version > .desc > img{
+    width: 20px;
+    position: relative;
+    top: 4px;
+    margin-right: 6px;
+}
+section.version > .desc{
+    background-color: var(--info-background-color);
+    padding: 6px 20px; 
+    color: var(--char-color);
+    font-size: 22px;
+    font-weight: 800;
+}
+
+section.version > h1{
+    font-family: genshinFont;
+    font-size: 35px;
+    width: 290px;
+    margin: 12px 0px 40px 30px;
+    text-align: right;
+    word-wrap: break-word;
+    word-break: keep-all;
+    color: var(--version-char-color);
+    text-shadow: -2px -2px 0 var(--sub-buttons-border), 1px -1px 0 var(--sub-buttons-border), -1px 1px 0 var(--sub-buttons-border), 1px 1px 0 var(--sub-buttons-border);
+}
+section.version > h1 > .higher{
+    font-family: genshinFont;
+    font-size: 40px;
+    text-align: left;
+    margin-left: 20px;
+}
+section.version > .firstOutline{
+    background-color: var(--box-bg-color);
+    padding: 3px 3px;
+    border-radius: 50px;
+    width: 120px;
+    position: relative;
+    left: 200px;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+
+section.version > .firstOutline > .destaque{
+    word-wrap: break-word;
+    word-break: keep-all;
+    border: 1px solid var(--sub-buttons-border);
+    padding: 5px 5px;
+    border-radius: 50px;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 14px;
+    color: var(--version-color);
+    cursor: pointer;
+}
+
+section.version > .buttons > button{
+    border: 0px solid black;
+    background-color: var(--buttons-color);
+    color: var(--sub-buttons-char-color);
+    transition: 0.1s ease-in;
+}
+section.version > .buttons > button:hover{
+    background-color: var(--buttons-hover-color);
+    transition: 0.1s ease-in;
+}
+section.version > .buttons > button.game{
+    padding: 19px 40px;
+    font-size: 23px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-right-width: 1px;
+    border-right-color: var(--sub-buttons-border);
+    cursor: pointer;
+}
+section.version > .buttons > button.option{
+    padding: 23px 10px 20px 10px;
+    font-size: 19px;
+    font-weight: 700;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    position: relative;
+    left: -3px;
+}
+/* -------------------------------------------------------------------- */
+
+/* ICONS */
+section.icons{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 30px 15px;
+    position: absolute;
+    width: 80px;
+    right: 0;
+    top: 0;
+    background-color: var(--side-background-color);
+}
+
+section.icons > a.sideBtn{
+    padding: 7px 7px;
+    border-radius: 50px;
+    border: 2px solid rgba(0, 0, 0, 0);
+    background-color: var(--side-buttons-back-color);
+    color: var(--char-color);
+    margin-bottom: 20px;
+    transition: 0.1s ease-in;
+}
+section.icons > a.sideBtn:hover,
+section.icons > a.sideBtn.active{
+    background-color: var(--side-buttons-selected-back-color);
+    color: var(--side-buttons-selected-color);
+    border: 2px solid var(--sub-buttons-border);
+    transition: 0.1s ease-in;
+}
+
+.dd-content{
+    display: none;
+    position: absolute;
+    background-color: var(--box-bg-color);
+    min-width: 160px;
+    width: 178px;
+    min-height: 120px;
+    max-height: 300px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    border-color: var(--box-border-color);
+    z-index: 1;
+    top: 70px;
+    right: 100px;
+    border-radius: 2px;
+}
+.dd-content > .content > img{
+    margin-bottom: 8px;
+}
+.dd-content > .content > span{
+    color: var(--box-normal-text-color);
+}
+
+.dd-content.arrow-right:after{/*Arrow direita */
+    content: " ";
+    position: absolute;
+    right: -15px;
+    top: 40px;
+    border-top: 15px solid transparent;
+    border-right: none;
+    border-left: 15px solid var(--box-border-color);
+    border-bottom: 15px solid transparent;
+}
+.dd-content.arrow-down:after{/*Arrow baixo*/
+    content: " ";
+    position: absolute;
+    right: 30px;
+    bottom: -15px;
+    border-top: 15px solid var(--box-border-color);
+    border-right: 15px solid transparent;
+    border-left: 15px solid transparent;
+    border-bottom: none;
+}
+
+/* CONTEUDO DA WINDOW */
+.show {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    animation-name: showPopUp;
+    animation-duration: 0.09s;
+}
+.dd-content > .content{
+    padding: 20px 15px 6px 15px;
+    min-height: 100px;
+}
+
+.dd-content > div.test > a,
+.dd-content > div.test{
+    text-decoration: none;
+    font-size: 17px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-decoration: none;
+    background-color: var(--box-link-bg-color);
+    color: var(--box-link-char-color);
+    padding: 10px 10px;
+}
+.dd-content > div.test:after{
+    content:'\25BA'
+}
+.dd-content > div.test:hover,
+.dd-content > div.test > a:hover{
+    color: var(--box-link-charHover-color);
+}
+
+@keyframes showPopUp {
+    0%   {opacity: 0;}
+    25%  {opacity: 0.25;}
+    50%  {opacity: 0.5;}
+    100% {opacity: 1;}
+}
+/* ----------------------------------------------------------- */
+
+/* Mobile */
+@media screen and (max-width: 896px) {
+    body{
+        background-image: url("../imgs/wallpaper.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    /* Modificando tamanho global do slider */
+    .slick-slider{
+        width: 100%;
+    }
+
+    section.infos{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 10px;
+    align-items: center;
+    justify-self: center;
+    width: 75%;
+    }
+
+    section.infos > .slider img{
+        width: 100%;
+    }
+
+    section.infos > img{
+        width: 240px;
+        margin-bottom: 20px;
+    }
+
+    section.version{
+        position: relative;
+        margin-top: 95px;
+        right: 90px;
+        width: 80%;
+        right: 20px;
+        align-items: end;
+    }
+
+    section.version > .desc > img{
+        width: 20px;
+        position: relative;
+        top: 4px;
+        margin-right: 6px;
+    }
+
+    section.version > .desc{
+        background-color: var(--info-background-color);
+        padding: 6px 20px; 
+        color: var(--char-color);
+        font-size: 17px;
+        font-weight: 800;
+    }
+
+    section.version > h1{
+        font-family: genshinFont;
+        font-size: 35px;
+        width: 290px;
+        margin: 12px 0px 40px 30px;
+        text-align: right;
+        word-wrap: break-word;
+        word-break: keep-all;
+        color: var(--version-char-color);
+        text-shadow: -2px -2px 0 var(--sub-buttons-border), 1px -1px 0 var(--sub-buttons-border), -1px 1px 0 var(--sub-buttons-border), 1px 1px 0 var(--sub-buttons-border);
+    }
+    section.version > h1 > .higher{
+        font-family: genshinFont;
+        font-size: 40px;
+        text-align: left;
+        margin-left: 20px;
+    }
+    section.version > .firstOutline{
+        left: 0;
+    }
+}
+/* ----------------------------------------------------------- */
