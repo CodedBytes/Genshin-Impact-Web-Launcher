@@ -1,5 +1,4 @@
 <div align="center">
-  <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=800&size=24&pause=1000&width=650&lines=Front-End+do+launcher+do+Genshin+Impact+em+Web+!" alt="Typing SVG" /></a><br>
   <img src="/logo.png">
 </div>
 
@@ -17,10 +16,17 @@ As linguagens usadas foram : <br>
   ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
   ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
   ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+  
+  ##
 
+APIs usadas :<br>
+<img src="/pre.png"> <br>
+url : https://kenwheeler.github.io/slick/
+   
   ##
 
 Demonstração do site :<br>
+<img src="/demo.png" width="500px"><br>
 https://codedbytes.github.io/Genshin-Impact-Web-Launcher/
 
   ##
