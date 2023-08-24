@@ -12,20 +12,20 @@ OBS : Não tenho nenhum envolvimento com a Hoyolab, e este projeto é destinado 
 
 ##
  
-As linguagens usadas foram : <br>
+As linguagens usadas foram : <br><br>
   ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
   ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
   ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
   
   ##
 
-APIs usadas :<br>
-<img src="/pre.png"> <br>
+APIs usadas :<br><br>
+<img src="/pre.png" width="100px"> <br>
 url : https://kenwheeler.github.io/slick/
    
   ##
 
-Demonstração do site :<br>
+Demonstração do site :<br><br>
 <img src="/demo.png" width="500px"><br>
 https://codedbytes.github.io/Genshin-Impact-Web-Launcher/
 
