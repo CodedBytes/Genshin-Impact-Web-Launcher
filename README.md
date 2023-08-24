@@ -8,7 +8,8 @@ Projeto front-end, recriando o launcher do jogo Genshin Impact em uma pagina web
 O projeto esta totalmente responsivo para as principais marcas de celulares do mercado e monitores.<br>
 Foi utilizado a API slick para criação do sistema de carrousel (Slide de imagens) com suporte a touch. 
 
-OBS : Não tenho nenhum envolvimento com a Hoyolab, e este projeto é destinado para demonstração de performace com front-end em webapps.
+OBS : Não tenho nenhum envolvimento com a Hoyolab, Hoyoverse, ou suas respectivas equipes. <br>
+Este projeto é destinado para demonstração de performace com front-end em webapps.
 
 ##
  
